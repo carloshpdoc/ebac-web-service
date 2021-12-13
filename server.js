@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const homeData = require('./data.json')
 
-app.listen(8080, (error) => {
+app.listen(process.env.PORT || 8080, (error) => {
     if (error) throw error
     console.log('Server running in http://127.0.0.1:8080')
 })
