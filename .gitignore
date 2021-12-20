@@ -6,9 +6,6 @@
 ### jspm ###
 jspm_packages
 
-### nodeja ###
-node_modules
-
 ### macOS ###
 # General
 .DS_Store
@@ -48,6 +45,7 @@ Temporary Items
 
 # Local History for Visual Studio Code
 .history/
+node_modules/
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
