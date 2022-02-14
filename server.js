@@ -79,7 +79,8 @@ app.post("/upload", async (req, res) => {
     }
 })
 
-app.get('/download', function(req, res){
-    const file = `${__dirname}/uploads/Additional_Tools_for_Xcode_12.5 (1).dmg`;
-    res.download(file); // Set disposition and send it.
-});
+app.get('/download/:name', function(req, res) {
+    const name = req.params.name;
+    const file = `${__dirname}/uploads/${name}`;
+    res.download(file);
+})
